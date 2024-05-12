@@ -1,0 +1,50 @@
+
+table, tr, td, th {
+	border: 1px white solid;
+	border-collapse: collapse;
+}
+
+th {
+	height: 30px;
+	min-width: 90px;
+	background-color: #EAECEE;
+	font-weight: 200;
+}
+td {
+	background-color: white;
+}
+
+
+.folderName {
+	min-width: 200px;
+}
+.folderNameDiv {
+}
+.folderNameEdit {
+	display: none;
+	min-width: 200px;
+}
+.fontColorEdit {
+	display: none;
+}
+.fontColorDiv {
+	display: none;
+}
+.bgColorEdit {
+	display: none;
+}
+.bgColorDiv {
+	display: none;
+}
+.tableCheckbox {
+	margin-left: 35px;
+}
+input.tableCheckbox {
+	width: 15px;
+	height: 15px;
+}
+
+.delete {
+	font-size: 0.8em;
+	color: blue;
+}

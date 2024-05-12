@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Options: My Outlook Web App:Mail</title>
+<style>
+body {
+	font-family: Segoe UI WPC Semilight, Segoe UI Semilight, Tahoma, Microsoft Sans Serif, Verdana,sans-serif;
+	-webkit-font-smoothing: antialiased;
+
+	margin: 0;
+	color: #0072C6;
+}
+header {
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: bold;
+	color: white;
+	background-color: #0072C6;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+header > div {
+	margin-left: 10px;
+}
+h2 {
+	font-size: 1.2em;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 0.2em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	color: dimgray;
+}
+h3 {
+	font-size: 1.1em;
+	-webkit-margin-before: 0.3em;
+	-webkit-margin-after: 0.1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+a {
+	color: darkgoldenrod;
+	text-decoration: none
+}
+hr {
+	padding-top: 10px;
+}
+
+#status	{
+		display: none;
+}
+.subitem {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.subsubitem {
+  margin-left: 40px;
+  margin-bottom: 8px;
+  font-size: 0.8em;
+}
+.checkboxItemDescription {
+	color: #003559;
+}
+.itemDescription {
+	color: #003559;
+}
+
+
+.floatLeft {
+	float: left;
+}
+
+
+
+/* color picker */
+
+</style>
+
+
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="jquery-ui-1.11.4/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="colorpicker-master/js/evol.colorpicker.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="lib/utils.js"></script>
+	<script src="myowa/editor.js"></script>
+	<script src="options.js"></script>
+
+	<link href="jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet" type="text/css">
+	<link href="colorpicker-master/css/evol.colorpicker.min.css" rel="stylesheet" type="text/css">
+	<link href="myowa/mycoloredittable.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+	<div>My Outlook Web App</div>
+</header>
+
+<section>
+	<h2>Options for enrichment in Mail</h2>
+
+	<div class="subitem">
+		<span class="checkboxItem">
+			<input type="checkbox" name="switch_newMailNotificationEnabled" id="newMailNotificationEnabled" value="enabled">
+			<span class="itemDescription" id="label_newMailNotificationEnabled">
+				<label for="newMailNotificationEnabled">Desktop notification for new email (works only with "Inbox")</label>
+			</span>
+		</span>
+	</div>
+
+	<div class="subitem">
+		<span class="checkboxItem">
+			<input type="checkbox" name="switch_colorAlertInMsgEnabled" id="colorAlertInMsgEnabled" value="enabled">
+			<span class="itemDescription" id="label_colorAlertInMsgEnabled">
+				<label for="colorAlertInMsgEnabled">Hightlight alerts at the top of message body like "To always show content from this sender, click here."</label>
+			</span>
+		</span>
+	</div>
+
+	<div class="subitem">
+		<span class="checkboxItem">
+			<input type="checkbox" name="switch_moveTopMenuToLeftEnabled" id="moveTopMenuToLeftEnabled" value="enabled">
+			<span class="itemDescription" id="label_moveTopMenuToLeftEnabled">
+				<label for="moveTopMenuToLeftEnabled">Move the top menu "Mail | Calender | People | Task" to left</label>
+			</span>
+		</span>
+	</div>
+
+	<div class="subitem">
+
+		<span class="checkboxItem">
+			<input type="checkbox" name="switch_colorFoldersEnabled" id="colorFoldersEnabled" value="enabled">
+			<span class="itemDescription" id="label_colorFoldersEnabled">
+				<label for="colorFoldersEnabled">Color below folders in Mail</label>
+			</span>
+		</span>
+
+		<div id='ColorEditor'>
+		</div>
+
+		<div class="subitem">
+			<div>
+				<button id="optionSaveButton">Save</button>
+				<button id="optionCancelButton">Cancel</button>
+			</div>
+			<div id="status"></div>
+		</div>
+
+	</div>
+</section>
+
+
+</body>
+</html>

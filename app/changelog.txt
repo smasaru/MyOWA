@@ -1,0 +1,2 @@
+0.1.8.0 main logic is pulled from content_script.js. Removed popup.{html,js} from the actual file and manifest file. @20151001
+0.1.9.0 notification is now clickable. At the moment, window selection doesn't work as I expect.. @20151001
